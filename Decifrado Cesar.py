@@ -1,5 +1,5 @@
-def Descifrar(cadena):
-    """ Esta función de decifrado con un ROT+3 """
+def descifrar(cadena):
+    """ Esta función de decifrado con un ROT-3 """
     # Pasamos todos los caracteres a minúsculas
     cadena = cadena.lower()
     # Eliminamos los espacios
@@ -16,7 +16,7 @@ def Descifrar(cadena):
             # Le sumamos al índice tres posiciones
             nuevo_indice = indice - 3
             # Si el nuevo índice supera la lista de elementos de la tupla, volvemos al principio
-            if nuevo_indice > 1:
+            if nuevo_indice < 1:
                 nuevo_indice = nuevo_indice + 26
             # Añadimos el nuevo caracter a la cadena resultado
             cadena2.append(caracteres[nuevo_indice])
