@@ -1,5 +1,5 @@
-def cifrar(cadena):
-    """ Esta función cifra con un ROT+3 el mensaje que le pasamos """
+def Descifrar(cadena):
+    """ Esta función de decifrado con un ROT+3 """
     # Pasamos todos los caracteres a minúsculas
     cadena = cadena.lower()
     # Eliminamos los espacios
@@ -25,12 +25,12 @@ def cifrar(cadena):
             # Si el caracter es un espacio, ponemos un espacio en su lugar
             cadena2.append(" ")
         else:
-            # Si un caracter no está en la tupla, no podemos cifrar el mensaje
+            # Si un caracter no está en la tupla, no podemos decifrar el mensaje
             resultado = "El mensaje tiene caracteres no válidos."
     # Imprimimos el mensaje resultante
     print(resultado)
 
 # Introducimos la cadena a cifrar
-cadena = input("Introduce el mensaje a cifrar: ")
+cadena = input("Introduce el mensaje a decifrar: ")
 
-cifrar(cadena)
+decifrar(cadena)
